@@ -1,2 +1,2 @@
 # To Do List
-A simple "To Do List" using vanilla Javascript (ES6).
+A simple "To Do List" using vanilla JavaScript (ES6).
