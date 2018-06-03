@@ -22,15 +22,15 @@ gulp.task('minifyScripts', () => {
 });
 
 // Compile SASS
-gulp.task('compileSASS', () => {
+gulp.task('compileSass', () => {
 	gulp.src('sass/*.scss')
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(gulp.dest('css'))
 });
 
 // Watch SASS
-gulp.task('watchSASS', function () {
-  gulp.watch('./sass/**/*.scss', ['compileSASS']);
+gulp.task('watchSass', function () {
+  gulp.watch('./sass/**/*.scss', ['compileSass']);
 });
 
 gulp.task("default", ['concatScripts', 'minifyScripts'], () => {
